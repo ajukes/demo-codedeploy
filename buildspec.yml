@@ -1,12 +1,13 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+#env:
+#  variables:
+#    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
 
 phases:
   install:
     commands:
+      - java -version
       - echo updating keys...
       - apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
       - echo installing maven...
