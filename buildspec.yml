@@ -8,7 +8,7 @@ phases:
   install:
     commands:
       - echo updating keys...
-      - sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+      - apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
       - echo installing maven...
       - apt-get update -y
       - apt-get install -y maven
